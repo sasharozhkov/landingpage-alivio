@@ -11,7 +11,7 @@
   --color-2: #292929;
   --color-3: #01996d;
   --color-4: #000000;
-  --color-4: #484848;
+  --color-5: #484848;
 
   /* - - - Fonts root - - - */
   --font-family: "Lato", sans-serif;
@@ -113,4 +113,8 @@ body._lock {
   margin-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.none {
+  display: none;
 }
