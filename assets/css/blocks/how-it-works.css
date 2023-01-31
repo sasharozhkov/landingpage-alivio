@@ -98,7 +98,6 @@
     column-gap: 25px;
   }
 }
-
 @media (max-width: 1300px) {
   .how-it-works {
     padding-top: 60px;
@@ -118,8 +117,7 @@
 }
 @media (max-width: 419px) {
   .how-it-works-steps {
-    grid-template-columns: 1fr;
-    column-gap: 92px;
+    grid-template-columns: auto;
   }
   .step {
     max-width: 320px;
