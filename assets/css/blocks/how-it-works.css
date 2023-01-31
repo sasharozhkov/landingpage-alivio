@@ -79,6 +79,7 @@
   padding-bottom: 126%;
 }
 .step-img {
+  border-radius: 8px;
   position: absolute;
   left: 0;
   top: 0;
