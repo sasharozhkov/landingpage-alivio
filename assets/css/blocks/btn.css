@@ -1,8 +1,6 @@
 .btn,
 a.btn {
   display: inline-block;
-  /* height: 51px;
-  line-height: 51px; */
   min-height: 51px;
   display: flex;
   justify-content: center;
@@ -24,4 +22,16 @@ a.btn:hover {
 .btn-big,
 a.btn-big {
   min-height: 65px;
+}
+@media (max-width: 991px) {
+  .btn,
+  a.btn {
+    min-height: 41px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .btn-big,
+  a.btn-big {
+    min-height: 55px;
+  }
 }

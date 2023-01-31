@@ -33,11 +33,12 @@
   display: flex;
 }
 .story-video {
-  border-radius: 18px;
-  overflow: hidden;
   width: 895px;
   position: relative;
+  border-radius: 18px;
+  overflow: hidden;
 }
+
 .story-video img {
   transform: scale(1.01);
 }
@@ -56,6 +57,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
 .story-video-object {
+  width: 100%;
+  height: 100%;
 }

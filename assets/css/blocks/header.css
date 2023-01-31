@@ -6,7 +6,6 @@
 .header-row {
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
 }
 .header-nav {
   margin-left: 172px;
@@ -39,4 +38,25 @@
 }
 .header-login-link:hover {
   color: var(--color-3);
+}
+
+@media (max-width: 1277px) {
+  .header-row {
+    justify-content: space-between;
+  }
+  .header-nav {
+    margin-left: 30px;
+  }
+  .header-nav li + li {
+    margin-left: 50px;
+  }
+  .header-login {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1055px) {
+  .header-nav,
+  .header-login {
+    display: none;
+  }
 }

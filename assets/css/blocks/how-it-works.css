@@ -87,3 +87,33 @@
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 1389px) {
+  .step:nth-child(2),
+  .step:nth-child(3) {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .how-it-works {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .how-it-works-header {
+    padding-bottom: 52px;
+    flex-direction: column;
+  }
+  .how-it-works-subtitle {
+    line-height: 130%;
+    font-size: 40px;
+  }
+  .how-it-works-header-content {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 419px) {
+  .how-it-works-steps {
+    grid-template-columns: 1fr;
+    column-gap: 92px;
+  }
+}
