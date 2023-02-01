@@ -13,6 +13,7 @@
   --color-4: #000000;
   --color-5: #484848;
   --color-6: #245852;
+  --color-7: #cdcdcd;
 
   /* - - - Fonts root - - - */
   --font-family: "Lato", sans-serif;
@@ -57,7 +58,6 @@ body {
   font-family: var(--font-family);
   color: var(--color-1);
   font-weight: 400;
-  background: var(--color-7);
 }
 input,
 button,
@@ -120,6 +120,28 @@ body._lock {
 }
 .none {
   display: none;
+}
+/* - - - Progress bar - - - */
+.progress-container {
+  position: fixed;
+  width: 100%;
+  height: 3px;
+  z-index: 50;
+}
+.progress-bar {
+  height: 3px;
+  background: var(--color-3);
+  width: 0%;
+}
+/* - - - - Animation - - - - */
+._anim-items {
+  transform: translate(0px, 40%);
+  transition: all 1.3s ease 0s;
+  opacity: 0;
+}
+._anim-no-hide._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 @media (max-width: 1535px) {
   .container-wide {

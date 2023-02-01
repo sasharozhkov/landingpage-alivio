@@ -30,21 +30,73 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
+    <!-- Progress bar -->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header-row">
           <div class="header-logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
-          <div class="header-nav">
-            <ul>
-              <li><a href="#">Почему Мы</a></li>
-              <li><a href="#">Решения</a></li>
-              <li><a href="#">Сообщество</a></li>
-              <li><a href="#">Стоимость</a></li>
+
+          <!-- Menu -->
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li>
+                <a title="Почему Мы" data-goto=".how-it-works" href="#" class="menu__link">Почему Мы</a>
+              </li>
+              <li>
+                <a title="Решения" data-goto=".product" href="#" class="menu__link">Решения</a>
+              </li>
+              <li>
+                <a title="Сообщество" data-goto=".story" href="#" class="menu__link">Сообщество</a>
+              </li>
+              <li>
+                <a title="Стоимость" data-goto=".footer" href="#" class="menu__link">Стоимость</a>
+              </li>
+              <li>
+                <a
+                  title="alexrozhkov.com"
+                  href="https://alexrozhkov.com"
+                  class="menu__link menu__link-text menu__link-img hidden-alexrozhkov"
+                  target="_blank"
+                >
+                  Сделано с любовью от:
+                </a>
+                <div class="menu__social social-menu hidden-social">
+                  <a title="Linkedin" href="https://www.linkedin.com/in/alexander-rozhkov-805471233" target="_blank" class="social__link">
+                    <img src="./assets/img/social/linkedin.svg" alt="Linkedin" />
+                  </a>
+                  <a title="Twitter" href="https://twitter.com/alexrozhkovcom" target="_blank" class="social__link">
+                    <img src="./assets/img/social/twitter.svg" alt="Twitter" />
+                  </a>
+                  <a title="Facebook" href="https://www.facebook.com/alexrozhkovcom" target="_blank" class="social__link">
+                    <img src="./assets/img/social/facebook.svg" alt="Facebook" />
+                  </a>
+                  <a title="Telegram" href="https://t.me/alexrozhkovcom" target="_blank" class="social__link">
+                    <img src="./assets/img/social/telegram.svg" alt="Telegram" />
+                  </a>
+                  <a title="Instagram" href="https://www.instagram.com/alexrozhkovcom" target="_blank" class="social__link">
+                    <img src="./assets/img/social/instagram.svg" alt="Instagram" />
+                  </a>
+                </div>
+              </li>
             </ul>
+          </nav>
+          <!-- End menu -->
+
+          <!-- Burger -->
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <div class="line1"></div>
+              <div class="line2"></div>
+            </div>
           </div>
+          <!-- End burger -->
+
           <div class="header-login">
-            <a class="header-login-link" href="#">Войти</a>
-            <a href="#" class="btn">Попробуй</a>
+            <a class="header-login-link" href="#footer">Войти</a>
+            <a href="#works" class="btn">Попробуй</a>
           </div>
         </div>
       </div>
@@ -52,30 +104,30 @@
 
     <main>
       <section class="home">
-        <div class="container">
+        <div class="container _anim-items _anim-no-hide">
           <div class="home-content">
             <h1 class="home-heading">Меняй себя, Это просто!</h1>
             <div class="home-text">
               <p>Каждый переживает стресс по-разному. Позвольте Аливио помочь вам в личном дневнике, чтобы преодолеть стресс.</p>
             </div>
             <div class="home-btn">
-              <a href="#" class="btn btn-big">Найди Путь</a>
+              <a href="#works" class="btn btn-big">Найди Путь</a>
             </div>
           </div>
         </div>
-        <div class="home-bg-img">
+        <div class="home-bg-img _anim-items _anim-no-hide">
           <img src="./assets/img/bg.jpg" alt="Bg" />
         </div>
       </section>
 
-      <section class="how-it-works">
+      <section class="how-it-works" id="works">
         <div class="container">
           <div class="how-it-works-header">
-            <div class="how-it-works-header-head">
+            <div class="how-it-works-header-head _anim-items _anim-no-hide">
               <h2 class="how-it-works-title">Как это работает</h2>
               <h3 class="how-it-works-subtitle">Понять и отпустить стресс в 3 шага</h3>
             </div>
-            <div class="how-it-works-header-content">
+            <div class="how-it-works-header-content _anim-items _anim-no-hide">
               <p>
                 Аливио предлагает столько журналов, сколько необходимо, охватывающих различные области, такие как беспокойство,
                 подавленность, печаль или гнев, а также различные личные причины, чтобы помочь вам осознать свои эмоции и подсказать, как
@@ -84,7 +136,7 @@
             </div>
           </div>
           <div class="how-it-works-steps">
-            <div class="step">
+            <div class="step _anim-items _anim-no-hide">
               <h4 class="step-heading" data-number="01">Подумай</h4>
               <div class="step-text">
                 <p>
@@ -97,7 +149,7 @@
               </div>
             </div>
 
-            <div class="step">
+            <div class="step _anim-items _anim-no-hide">
               <h4 class="step-heading" data-number="02">Напиши и Пойми</h4>
               <div class="step-text">
                 <p>Пишите, рисуйте, размышляйте, разбирайтесь. Аливио проведет вас через подсказки и поможет справиться со стрессом!</p>
@@ -107,7 +159,7 @@
               </div>
             </div>
 
-            <div class="step">
+            <div class="step _anim-items _anim-no-hide">
               <h4 class="step-heading" data-number="03">Аливио!</h4>
               <div class="step-text">
                 <p>Теперь вы знаете, и у вас есть способ управлять и преодолевать собственный стресс. Чего же ты ждешь? Аливио сегодня!</p>
@@ -120,20 +172,19 @@
         </div>
       </section>
 
-      <section class="story">
+      <section class="story _anim-items _anim-no-hide">
         <div class="container container-wide">
           <div class="story-row">
-            <div class="story-content">
+            <div class="story-content _anim-items _anim-no-hide">
               <h2 class="story-heading">Давайте послушаем историю Кайлы</h2>
               <div class="story-text">
                 <p>Посмотрите, насколько хорошо Alivio работает в реальной жизни клиента.</p>
               </div>
               <div class="story-btn">
-                <a href="#" class="btn btn-big">Давайте начнем</a>
+                <a href="#works" class="btn btn-big">Давайте начнем</a>
               </div>
             </div>
-
-            <div class="story-video">
+            <div class="story-video _anim-items _anim-no-hide">
               <div class="story-video-overlay">
                 <button class="story-video-btn">
                   <img src="./assets/img/play-white.svg" alt="iconvideo" />
@@ -148,7 +199,7 @@
       <section class="product">
         <div class="container">
           <div class="product-row">
-            <div class="product-img-wrapper">
+            <div class="product-img-wrapper _anim-items _anim-no-hide">
               <img class="product-img" src="./assets/img/photo.jpg" alt="image" />
               <div class="product-card">
                 <div class="card">
@@ -169,14 +220,14 @@
                 </div>
               </div>
             </div>
-            <div class="product-content">
+            <div class="product-content _anim-items _anim-no-hide">
               <h2 class="product-content-title">Наш продукт</h2>
               <h3 class="product-content-subtitle">Расскажите нам о своем стрессе</h3>
               <div class="product-content-text">
                 <p>Каждый переживает это, и по-разному. Позвольте Аливио помочь вам в личном дневнике, чтобы преодолеть стресс.</p>
               </div>
               <div class="product-content-btn">
-                <a href="#" class="btn btn-big">Найди свой путь</a>
+                <a href="#works" class="btn btn-big">Найди свой путь</a>
               </div>
             </div>
           </div>
@@ -184,9 +235,9 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer _anim-items _anim-no-hide" id="footer">
       <div class="container">
-        <div class="footer-content">
+        <div class="footer-content _anim-items _anim-no-hide">
           <img class="footer-logo" src="./assets/img/footer-logo.svg" alt="logo" />
           <nav class="footer-nav">
             <ul>
@@ -207,5 +258,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Script -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
